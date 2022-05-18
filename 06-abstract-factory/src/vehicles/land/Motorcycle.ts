@@ -8,7 +8,7 @@ export default class Motorcycle implements ILandVehicle {
     }
 
     getCargo(): void {
-        console.log("Já pegamos a encomendo!");
+        console.log("Já pegamos a encomenda!");
     }
 
 }

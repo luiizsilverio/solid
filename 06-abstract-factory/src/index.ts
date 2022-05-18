@@ -3,6 +3,7 @@ import Company from "./vehicles/consts/Company";
 import NineNineTransport from "./vehicles/factories/NineNineTransport";
 import ITransportFactory from "./vehicles/factories/ITransportFactory";
 import UberTransport from "./vehicles/factories/UberTransport";
+import LimeTransport from "./vehicles/factories/LimeTransport";
 
 const currentCompany = Company.NINENINE;
 let factory: ITransportFactory;
@@ -17,6 +18,10 @@ switch (currentCompany) {
         factory = new NineNineTransport();
         break;
 
+    case Company.LIME:
+        factory = new LimeTransport()
+        break;
+        
     default:
         console.log("Desconhecida");
 

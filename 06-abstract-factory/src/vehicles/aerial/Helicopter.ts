@@ -5,7 +5,7 @@ export default class Helicopter implements IAircraft {
     startRoute(): void {
         this.wind();
         this.getCargo();
-        console.log("Iniciando a decolagem...");
+        console.log("Iniciando a decolagem... (helicóptero)");
     }
 
     getCargo(): void {
